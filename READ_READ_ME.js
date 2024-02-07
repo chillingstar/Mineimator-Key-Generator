@@ -1,7 +1,7 @@
   if (window.location.href == "https://www.mineimator.com/upgrade" || window.location.href == "https://mineimator.com/upgrade" || window.location.href == "http://mineimator.com/upgrade" || window.location.href == "http://www.mineimator.com/upgrade") {
     let keys = prompt("How many keys to generate?: ");
-    if (keys < 1 || keys > 10) {
-        console.log("Number of keys to generate must be larger than 1, and lower than 10.");
+    if (keys < 1) {
+        console.log("Number of keys to generate must be larger than 1");
     } else {
         for (let i=0; i < keys; i++) {
             fetch("https://www.mineimator.com/php/donate.php", {
@@ -37,4 +37,4 @@
     } else {
         alert("Cancelled.")
     }
-}
+    }
